@@ -1,0 +1,51 @@
+
+.bg-image {
+  background-image: url('../../image/fond2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.titre-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #4338ca; /* Indigo foncé */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-description{
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2em;
+  word-wrap: break-word;
+  background-image: radial-gradient(circle, rgba(132, 54, 211, 0.58), rgba(27, 68, 170, 0.72));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.menu-liens {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-liens {
+    display: flex;
+    gap: 16px; /* espace entre les liens */
+  }
+}
+
+.menu-item {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #0d066e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #e0e7ff; /* Indigo très clair */
+  color: #3730a3; /* Indigo plus foncé */
+}
